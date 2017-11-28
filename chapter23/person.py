@@ -1,6 +1,5 @@
 import datetime
 
-
 class Person:
 
     count = 0
