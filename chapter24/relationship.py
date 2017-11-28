@@ -50,4 +50,3 @@ if __name__ == '__main__':
     # print(dpt)
     # print(d)
     # print(d.department.tel)
-    
