@@ -1,0 +1,17 @@
+# Regular Expression
+# 一种文本模式,描述在搜索文本时要匹配的一个或多个字符串
+# 典型场景:
+1.数据验证
+2.文本扫描
+3.文本提取
+4.文本替换
+5.文本分割
+# 语法:
+\d+
+[A-Z]
+
+
+
+
+
+Tom is 8 years old. Mike is 35 years old. Peter is 68 years old.
