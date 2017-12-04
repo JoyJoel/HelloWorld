@@ -1,7 +1,7 @@
 import os
 
 os.getcwd()
-os.chdir('d:\pycharmproject\helloworld\.onlinecourse')
+os.chdir('d:\pycharmproject\helloworld\.onlinecourse\SQL')
 
 import sqlite3
 conn = sqlite3.connect('books.sqlite')
