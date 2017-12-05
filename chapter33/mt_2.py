@@ -15,8 +15,18 @@ def main():
 
     threads = []
     t1 = threading.Thread(target=worker, args=(4,))
+    threads.append(t1)
 
-    time.sleep(4)
+    t2 = threading.Thread(target=worker, args=(2,))
+    threads.append(t2)
+
+    for t in threads:
+        t.start()
+
+    for t in threads:
+        t.join()    # join 等待当前线程执行完毕
+
+    # time.sleep(4)
     print(f'【主函数执行结束于: {time.ctime()}】')
 
 if __name__ == '__main__':
