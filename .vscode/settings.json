@@ -2,12 +2,11 @@
     "python.unitTest.unittestArgs": [
         "-v",
         "-s",
-        "./chapter33",
+        ".",
         "-p",
-        "*test.py"
+        "test*.py"
     ],
-    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.unittestEnabled": true,
     "python.unitTest.pyTestEnabled": false,
-    "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.promptToConfigure": false
+    "python.unitTest.nosetestsEnabled": false
 }
