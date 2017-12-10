@@ -24,9 +24,9 @@ print(pattern.findall(html))
 
 results = [(href, re.sub(r'<.*?>', '', title)) for href, title in html]
 
+# gitTEST
 # 保存结果到文件
 with open(r'data.txt', 'w', encoding='utf8') as f:
     for row in results:
         f.write(f'{row[0]}\t{row[1]}\n')
-      
-        
+
