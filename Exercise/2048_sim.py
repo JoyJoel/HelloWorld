@@ -91,6 +91,7 @@ class GameField(object):
         help_string2 = '     (R)Restart (Q)Exit'
         gameover_string = '           GAME OVER'
         win_string = '          YOU WIN!'
+
         def cast(string):
             screen.addstr(string + '\n')
 
@@ -157,23 +158,23 @@ class GameField(object):
 
 def main(stdscr):
     def init():
-        #重置游戏棋盘
+        # 重置游戏棋盘
         game_field.reset()
         return 'Game'
 
     def not_game(state):
-        #画出 GameOver 或者 Win 的界面
+        # 画出 GameOver 或者 Win 的界面
         game_field.draw(stdscr)
-        #读取用户输入得到action，判断是重启游戏还是结束游戏
+        # 读取用户输入得到action，判断是重启游戏还是结束游戏
         action = get_user_action(stdscr)
-        responses = defaultdict(lambda: state) #默认是当前状态，没有行为就会一直在当前界面循环
-        responses['Restart'], responses['Exit'] = 'Init', 'Exit' #对应不同的行为转换到不同的状态
+        responses = defaultdict(lambda: state) # 默认是当前状态，没有行为就会一直在当前界面循环
+        responses['Restart'], responses['Exit'] = 'Init', 'Exit' # 对应不同的行为转换到不同的状态
         return responses[action]
 
     def game():
-        #画出当前棋盘状态
+        # 画出当前棋盘状态
         game_field.draw(stdscr)
-        #读取用户输入得到action
+        # 读取用户输入得到action
         action = get_user_action(stdscr)
 
         if action == 'Restart':
@@ -203,7 +204,7 @@ def main(stdscr):
 
     state = 'Init'
 
-    #状态机开始循环
+    # 状态机开始循环
     while state != 'Exit':
         state = state_actions[state]()
 
