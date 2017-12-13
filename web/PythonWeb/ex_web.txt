@@ -1,0 +1,22 @@
+纯 Python Web 开发
+    web前端
+        网页 文件
+        .txt
+        .rtf
+        .docx
+        .pdf
+        超文本文件
+            .html
+        ...
+        1) html          内容
+        2) CSS           表现
+        3) JavaScript    行为
+
+    HTTP
+        Browser/Server   B/S
+        Client/S         C/S
+
+    服务器端编程
+
+创建虚拟环境
+# python -m evnv .
