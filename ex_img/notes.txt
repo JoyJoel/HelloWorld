@@ -1,0 +1,5 @@
+图像处理
+    图像基础知识
+    .jpg .png .gif .bmp .tiff .psd ....
+        位图   bitmap   基于像素点     常用处理软件:PS
+        矢量图 vector   基于数学公式   常用处理软件:AI
