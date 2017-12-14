@@ -143,7 +143,7 @@ class GameField(object):
                 any(row_is_left_movable(row) for row in field)
 
         check['Right'] = lambda field:                              \
-                 check['Left'](invert(field))
+                check['Left'](invert(field))
 
         check['Up']    = lambda field:                              \
                 check['Left'](transpose(field))
@@ -188,7 +188,6 @@ def main(stdscr):
                 return 'Gameover'
         return 'Game'
 
-
     state_actions = {
             'Init': init,
             'Win': lambda: not_game('Win'),
@@ -200,7 +199,6 @@ def main(stdscr):
 
     # 设置终结状态最大数值为 32
     game_field = GameField(win=32)
-
 
     state = 'Init'
 
