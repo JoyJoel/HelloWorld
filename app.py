@@ -18,3 +18,4 @@ def run():
     product.category.print_db()
 
 run()
+
