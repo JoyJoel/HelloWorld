@@ -1,0 +1,16 @@
+/*
+    CSS 定义网页表现 
+*/
+h1, h2{
+    color: aqua;
+    border:1px solid #000; 
+}
+
+.info {
+    color: #f00;
+    font-size: 18px;
+}
+
+#logo {
+    border: #f00 solid 5px;
+}
