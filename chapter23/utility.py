@@ -1,5 +1,5 @@
-"""工具方法类
-"""
+"""工具方法类"""
+
 
 class Utility:
     @staticmethod
@@ -17,6 +17,7 @@ class Utility:
 # util = Utility()
 # util.connect_db()
 # util.upload_img()
+
 
 Utility.connect_db()
 Utility.upload_img()

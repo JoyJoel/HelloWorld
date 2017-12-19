@@ -1,5 +1,6 @@
 import datetime
 
+
 class Person:
 
     count = 0
@@ -16,8 +17,8 @@ class Person:
     @classmethod
     def print_all_people(cls):
         print(Person.people)
-    #通过p.print_all_people()打印
-    #  或Person.print_all_people()
+    # 通过p.print_all_people()打印
+    # 或Person.print_all_people()
 
     # def print_all_people(self):
     #     print(Person.people)
@@ -28,7 +29,7 @@ class Person:
     def salary(self):
         return self._salary
 
-    @salary.setter  #'设置器':赋值时,通过setter判断
+    @salary.setter  # '设置器':赋值时,通过setter判断
     def salary(self, value):
         if value <= 0:
             self._salary = 0
@@ -45,7 +46,7 @@ class Person:
     def age(self):
         return datetime.date.today().year - self.birthdate.year
 
-    @age.setter  #'设置器':赋值时,通过setter判断
+    @age.setter  # '设置器':赋值时,通过setter判断
     def age(self, value):
         raise ValueError('年龄不能赋值,只能通过生日计算')
 
@@ -57,6 +58,7 @@ class Person:
 
     def __repr__(self):
         return f'<Person {self.name}, {self.birthdate}, {self.gender}, {self.salary}>'
+
 
 p = Person('Tom', datetime.date(1990, 3, 3), 'male', 12000)
 p2 = Person('Jerry', datetime.date(1990, 3, 3), 'male', 12000)
