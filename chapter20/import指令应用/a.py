@@ -2,8 +2,10 @@ import b
 
 greeting = 'Hello'
 
+
 def print_hello():
     print(greeting)
+
 
 print_hello()
 

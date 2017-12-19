@@ -1,6 +1,6 @@
-"""类间关系-依赖
-"""
+"""类间关系-依赖"""
 from datetime import date
+
 
 class Project:
     def __init__(self, name, team, start_date):
@@ -11,6 +11,7 @@ class Project:
     def __repr__(self):
         return f'<Project :{self.name}>'
 
+
 class Department:
     def __init__(self, name, manager, tel):
         self.name = name
@@ -20,6 +21,7 @@ class Department:
 
     def __repr__(self):
         return f'<Department :{self.name}>'
+
 
 class Developer:
     def __init__(self, department, name, skills):
@@ -34,6 +36,7 @@ class Developer:
     def develop_project(self, project):
         print(f'{self.name} 正在参与开发项目: {project}')
 
+
 if __name__ == '__main__':
     # d = Developer('Tom', ['Python', 'SQL', 'Flask'])
     # print(d)
@@ -43,7 +46,7 @@ if __name__ == '__main__':
     # d.develop_project(proj)
 
     dpt = Department('技术部', 'Mike', '010-88889999')
-    d = Developer(dpt, 'Tom', ['Python','Flask'])
+    d = Developer(dpt, 'Tom', ['Python', 'Flask'])
     d2 = Developer(dpt, 'Jerry', ['Django', 'MongoDB'])
 
     print(dpt.employees)

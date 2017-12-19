@@ -10,8 +10,8 @@
 
 import unittest
 
-person = {'name':'Mike', 'age': 20}
-number = [1 ,3, 2, 88, 7, 44]
+person = {'name': 'Mike', 'age': 20}
+number = [1, 3, 2, 88, 7, 44]
 s = '优品课堂 codeclassroom.com'
 
 
@@ -25,6 +25,7 @@ class TestAssert(unittest.TestCase):
         # self.assertIsNone(person.get('Name', None))
         # self.assertIsInstance(number[0], int)
         self.assertGreater(7, number[0])
+
 
 if __name__ == '__main__':
     unittest.main()

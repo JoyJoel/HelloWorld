@@ -1,7 +1,7 @@
 """异常处理
 """
 
-student = {'name':'Peter', 'age': 20, 'scores': [99, 88, 77]}
+student = {'name': 'Peter', 'age': 20, 'scores': [99, 88, 77]}
 
 try:
     name = student['name']
@@ -12,10 +12,10 @@ try:
     z = x / 0
     print(z)
 except NameError:
-    #print(err)
-    #print('除零错误')
+    # print(err)
+    # print('除零错误')
     raise
-    #print('有键值错误或索引错误或名称错误!')
+    # print('有键值错误或索引错误或名称错误!')
 except KeyError:
     pass
 except IndexError:

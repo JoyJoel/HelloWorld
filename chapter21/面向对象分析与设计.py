@@ -12,8 +12,10 @@
 person = '张三'
 person = {'name': '张三', 'gender': '男', 'age': 20}
 
+
 def call(cellphone):
     print('使用{}打电话'.format(cellphone))
+
 
 cellphone = {'brand': 'iphone5s', 'price': '4800'}
 person['call'] = call

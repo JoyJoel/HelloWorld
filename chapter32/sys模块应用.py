@@ -1,10 +1,10 @@
 import sys
+import traceback  # 回溯对象,快速定位问题根源
 
 from pprint import pprint
 
 pprint(dir(sys))
 
-import traceback  # 回溯对象,快速定位问题根源
 try:
     raise KeyError
 except:

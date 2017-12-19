@@ -11,10 +11,10 @@ print(diff.total_seconds())
 o = datetime.datetime(2008, 8, 8, 20, 8)
 
 
-print(o + datetime.timedelta(days=100))  #天数加法
+print(o + datetime.timedelta(days=100))  # 天数加法
 
-result = d + datetime.timedelta(days=-100)  #天数减法
+result = d + datetime.timedelta(days=-100)  # 天数减法
 print(result)
 
-result2 = d + datetime.timedelta(seconds=3000)  #秒数加法, 小时算法同理
+result2 = d + datetime.timedelta(seconds=3000)  # 秒数加法, 小时算法同理
 print(result2)

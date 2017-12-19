@@ -1,4 +1,5 @@
-#封装 继承 多态
+# 封装 继承 多态
+
 
 class Employee:
     def __init__(self, name, department, title, salary):
@@ -13,7 +14,8 @@ class Employee:
     def working(self):
         print(f'员工{self.name}在工作...')
 
-class Developer(Employee): #括号内写入继承的基类(=超类super)
+
+class Developer(Employee):  # 括号内写入继承的基类(=超类super)
     def __init__(self, name, department, title, salary, skills):
         Employee.__init__(self, name, department, title, salary)
         self.skills = skills
@@ -24,6 +26,7 @@ class Developer(Employee): #括号内写入继承的基类(=超类super)
     def working(self):
         super().working()
         print('开发人员在工作...')
+
 
 class Accountant(Employee):
     def __init__(self, name, department, title, salary, certification):
@@ -36,6 +39,7 @@ class Accountant(Employee):
     def working(self):
         super().working()
         print('会计在工作...')
+
 
 if __name__ == '__main__':
     d = Developer('Tom', '技术部', '高级工程师', 13000, ['Python', 'Flask'])

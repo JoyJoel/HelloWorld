@@ -5,7 +5,8 @@ import sys
 
 
 sys.stdout.write('Hello')
-print('请输入信息:');x = sys.stdin.readline()[:]
+print('请输入信息:')
+x = sys.stdin.readline()[:]
 
 print(x)
 

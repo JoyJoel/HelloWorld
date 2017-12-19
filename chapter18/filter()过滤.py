@@ -9,14 +9,17 @@ print(results)
 
 print('-------------------------------')
 
+
 def func(x):
     return x >= 60
+
+
 results = list(filter(func, scores))
 print(results)
 
 print('-------------------------------')
 
-results = list(filter(lambda s: s>= 60, scores))
+results = list(filter(lambda s: s >= 60, scores))
 print(results)
 
 print('-------------------------------')
