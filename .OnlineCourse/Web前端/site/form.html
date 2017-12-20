@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link: 链接样式表-->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- script: 使用脚本-->
+    <title>Document</title>
+    <style>
+    .test{
+        background-color: #0f0
+    }    
+    </style>
+</head>
+
+<body>
+    <h1 class="test">用户注册</h1>
+    <form action="." method="get">
+        <p>用户名: <input type="text" name="username" value="" placeholder="请输入您的姓名"></p>
+        <!--                                                   输入提示-->
+        <p>密码: <input type="password" name="password" value=""></p>
+        <!-- "password"自动隐藏输入字符为 ·  -->
+        <p>邮箱: <input type="email" name="email" value=""></p>
+        <p>学历: 
+            <select>
+            <option value="1">本科以上</option>
+            <option value="2">本科</option>
+            <option value="3">专科</option>
+            <option value="4">高中</option>
+        </select>
+        </p>
+        <!--下拉列表-->
+        <p>技能:
+            <input type="radio" name="skill" id="python" value=""> <label for="python">Python</label>
+        <!-- id... label for... : 点击文字可选中单选按钮 -->
+        <!-- "id"是唯一的 -->      
+            <input type="radio" name="skill" value=""> Java
+            <input type="radio" name="skill" value=""> PHP
+            <input type="radio" name="skill" value=""> C#
+        </p>
+        <!--单选按钮-->
+        <p>简介: <textarea name="intro" id="" cols="30" rows="10"></textarea></p>
+        <p><input type="checkbox" name="" id="agree" value=""><label for="agree">同意协议</label></p>
+        <!--单选框-->
+        <p>
+            <input type="submit" class="btn btn-primary" name="" value="提交">
+            <input type="button" name="" value="普通按钮">
+            <input type="reset" name="" value="重置">
+        </p>
+    </form>
+
+</body>
+
+</html>
